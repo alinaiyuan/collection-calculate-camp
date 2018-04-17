@@ -2,6 +2,13 @@
 
 function find_last_even(collection) {
   //在这里写入代码
+  var arr=[];
+  for(var i in collection){
+    if(collection[i]%2==0){
+      arr.push(collection[i]);
+    }
+  }
+  return arr[arr.length-1];
 }
 
 module.exports = find_last_even;
